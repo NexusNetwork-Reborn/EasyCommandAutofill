@@ -125,6 +125,10 @@ final class Main extends PluginBase{
 				$blocks[] = $alias;
 		}
 		$this->addSoftEnum(new CommandEnum('Block', $blocks, true), false);
+
+		//Nexus Enums
+		$arraycode = ["a", "b"];
+		$this->addSoftEnum(new CommandEnum('type', $arraycode, true), false);
 	}
 
 	private function setDefaultCommandUsages() : void{
